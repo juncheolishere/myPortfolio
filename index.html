@@ -1,0 +1,435 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kjc_portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 상단 고정 바 -->
+        <div id="headNav">
+            <div>
+                <div id="anchoring">
+                    <div class="anchor" onclick="scrollToWhere('Main')">
+                        <span>
+                            Main Page
+                        </span>
+                    </div>
+                    <div class="anchor" onclick="scrollToWhere('Skills')">
+                        <span>
+                            My Skills
+                        </span>
+                    </div>
+                    <div class="anchor" onclick="scrollToWhere('Archiving')">
+                        <span>
+                            Archiving
+                        </span>
+                    </div>
+                    <div class="anchor" onclick="scrollToWhere('About')">
+                        <span>
+                            About Me
+                        </span>
+                    </div>
+                </div>
+                <h3 id="title">KIM JUN CHEOL</h3>
+                <div id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="dayNight">
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 자기소개 -->
+        <div id="section1">
+            <div id="interactivePoints"></div>
+            <div id="myName">
+                <h2>To Be Computational Designer</h2>
+                <p>컴퓨테이셔널 디자이너를 목표로 코딩하는, 김준철입니다.
+                건축학을 전공하며 디자인과 산업의 전반적인 관계를 체득했습니다.
+                이런 배경으로 디자이너와 개발자의 양방향 커뮤니케이션에 익숙합니다.
+                계속 성장하며, 프로젝트 진행 속에서 성취감을 느끼고 싶습니다.</p>
+            </div>
+            <div id="circle2"></div>
+            <div id="frameImage">
+                <img id="myImage" src="img_src/myAvatar.png" alt="">
+            </div>
+        </div>
+        <!-- my stack -->
+        <div id="section2">
+            <h2>What I'm good at</h2>
+            <!-- 카드뭉치 -->
+            <div id="showingContainer">
+                
+                <!-- html / css -->
+                <!-- 자식의 순서는 "svg - h3 - p" 이 3개 고정 -->
+                <div class="card">
+                    <svg class="icon"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 522.468 522.469" style="enable-background:new 0 0 522.468 522.469;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M325.762,70.513l-17.706-4.854c-2.279-0.76-4.524-0.521-6.707,0.715c-2.19,1.237-3.669,3.094-4.429,5.568L190.426,440.53
+                                    c-0.76,2.475-0.522,4.809,0.715,6.995c1.237,2.19,3.09,3.665,5.568,4.425l17.701,4.856c2.284,0.766,4.521,0.526,6.71-0.712
+                                    c2.19-1.243,3.666-3.094,4.425-5.564L332.042,81.936c0.759-2.474,0.523-4.808-0.716-6.999
+                                    C330.088,72.747,328.237,71.272,325.762,70.513z"/>
+                                <path d="M166.167,142.465c0-2.474-0.953-4.665-2.856-6.567l-14.277-14.276c-1.903-1.903-4.093-2.857-6.567-2.857
+                                    s-4.665,0.955-6.567,2.857L2.856,254.666C0.95,256.569,0,258.759,0,261.233c0,2.474,0.953,4.664,2.856,6.566l133.043,133.044
+                                    c1.902,1.906,4.089,2.854,6.567,2.854s4.665-0.951,6.567-2.854l14.277-14.268c1.903-1.902,2.856-4.093,2.856-6.57
+                                    c0-2.471-0.953-4.661-2.856-6.563L51.107,261.233l112.204-112.201C165.217,147.13,166.167,144.939,166.167,142.465z"/>
+                                <path d="M519.614,254.663L386.567,121.619c-1.902-1.902-4.093-2.857-6.563-2.857c-2.478,0-4.661,0.955-6.57,2.857l-14.271,14.275
+                                    c-1.902,1.903-2.851,4.09-2.851,6.567s0.948,4.665,2.851,6.567l112.206,112.204L359.163,373.442
+                                    c-1.902,1.902-2.851,4.093-2.851,6.563c0,2.478,0.948,4.668,2.851,6.57l14.271,14.268c1.909,1.906,4.093,2.854,6.57,2.854
+                                    c2.471,0,4.661-0.951,6.563-2.854L519.614,267.8c1.903-1.902,2.854-4.096,2.854-6.57
+                                    C522.468,258.755,521.517,256.565,519.614,254.663z"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <h3>HTML/CSS</h3>
+                    <p>· 가상선택자를 활용하여 동적UI를 작성할 수 있습니다.<br>
+                        · DOM객체와 트리구조를 이해하고 있습니다.<br>
+                        · 이벤트를 이용하여 인풋값을 변수로 활용할 수 있습니다.<br>
+                        · 사용자의 해상도를 고려하여 반응형 CSS 속성을 계획하거나,
+                        미디어 쿼리를 이용할 수 있습니다.
+                    </p>
+
+                    <svg class="wave wave1" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g transform="translate(443.7818507117962 446.4859935377242)">
+                            <path d="M209.5 -359.4C273 -326.2 327 -273.1 363.2 -209.9C399.4 -146.7 417.7 -73.3 413.5 -2.4C409.3 68.5 382.6 137 347.5 202C312.3 266.9 268.6 328.3 209.3 365.7C150 403.1 75 416.6 3.3 410.9C-68.5 405.3 -137 380.6 -193.8 341.8C-250.7 302.9 -295.8 249.9 -332.1 190.6C-368.3 131.3 -395.7 65.6 -400.8 -2.9C-405.8 -71.5 -388.7 -143 -354.3 -205.5C-319.8 -268 -268.2 -321.5 -206.3 -355.6C-144.3 -389.7 -72.2 -404.3 0.4 -405.1C73 -405.8 146 -392.5 209.5 -359.4" fill="#BB004B">
+                            </path>
+                        </g>
+                    </svg>
+                    <svg class="wave wave2" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(434.4502383394966 444.05924072598964)"><path d="M200.5 -344.8C265 -310.1 326.1 -266.8 367.1 -207.9C408.1 -149 429 -74.5 423 -3.5C416.9 67.5 383.8 135 345 197.6C306.2 260.3 261.6 318.1 203.1 357.5C144.7 396.9 72.3 418 1.4 415.5C-69.5 413 -139 387.1 -200.3 349.3C-261.7 311.6 -314.9 262 -346.8 201.9C-378.7 141.7 -389.4 70.8 -392.2 -1.7C-395.1 -74.2 -390.3 -148.3 -356.4 -205.2C-322.5 -262 -259.7 -301.5 -195.5 -336.4C-131.3 -371.3 -65.6 -401.7 1.2 -403.7C68 -405.8 136 -379.6 200.5 -344.8" fill="#BB004B"></path></g></svg>
+                    <svg class="wave wave3" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(458.09519772580506 458.2736519661759)"><path d="M193.8 -332.5C256.6 -299.4 316.6 -258.4 354.1 -201.7C391.5 -145 406.2 -72.5 400.2 -3.5C394.1 65.5 367.2 131 332.6 192.6C298.1 254.3 255.8 312 199.1 344.9C142.3 377.8 71.2 385.8 0.3 385.3C-70.7 384.9 -141.3 376 -199.1 343.8C-256.8 311.5 -301.6 255.7 -341.1 194.5C-380.6 133.3 -414.8 66.7 -417.5 -1.6C-420.3 -69.8 -391.6 -139.7 -354.2 -204.6C-316.9 -269.6 -271 -329.6 -210.5 -364.1C-150 -398.5 -75 -407.2 -4.8 -399C65.5 -390.8 131 -365.6 193.8 -332.5" fill="#BB004B"></path></g></svg>
+                </div>
+                <!-- 자바스크립트 -->
+                <div class="card">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630">
+                        <rect width="630" height="630" fill="#f7df1e"/>
+                        <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/>
+                    </svg>
+                    <h3>Javascript</h3>
+                    <p>
+                        · ES6+ 문법에 익숙합니다.<br>
+                        · class 객체를 활용하여 동적으로 객체를 생성 및 조작할 수 있습니다.<br>
+                        · 이벤트리스너를 활용하여 설계한 기능을 수행시킬 수 있습니다.<br>
+                        · 논리적인 알고리즘을 짤 수 있습니다.
+                    </p>
+                    <svg class="wave wave1" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(448.3164218109349 437.9872149115274)"><path d="M213.1 -361.9C276.2 -332.6 327.3 -275.6 364.6 -210.6C402 -145.7 425.5 -72.8 420.1 -3.1C414.8 66.7 380.6 133.3 342.4 196.7C304.1 260.1 261.8 320.1 204.1 359.5C146.3 398.8 73.2 417.4 2.9 412.3C-67.3 407.3 -134.7 378.6 -194.3 340.3C-253.9 302.1 -305.8 254.3 -346.6 196C-387.4 137.7 -417.2 68.8 -417.5 -0.2C-417.8 -69.2 -388.6 -138.3 -347.9 -196.8C-307.1 -255.2 -254.8 -303 -194.9 -334C-135 -365.1 -67.5 -379.4 3.7 -385.9C75 -392.4 150 -391.1 213.1 -361.9" fill="#BB004B"></path></g></svg>
+                    
+                    <svg class="wave wave2" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(455.85238539198656 451.4552347962593)"><path d="M198.9 -338.1C261.9 -308.2 319.7 -263.1 351.6 -204.2C383.4 -145.3 389.2 -72.7 386.9 -1.3C384.6 70 374.2 140 342.5 199.2C310.8 258.4 257.9 306.7 197.3 339.7C136.7 372.7 68.3 390.4 1.4 388C-65.6 385.7 -131.3 363.3 -191.6 330.2C-251.9 297 -307 253 -344.5 196.2C-382 139.3 -402 69.7 -398.7 1.9C-395.4 -65.8 -368.7 -131.7 -335.9 -196.6C-303.1 -261.6 -264 -325.6 -207 -358.9C-150 -392.1 -75 -394.6 -3.5 -388.5C68 -382.4 136 -367.9 198.9 -338.1" fill="#BB004B"></path></g></svg>
+                    
+                    <svg class="wave wave3" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(452.26320807752575 449.1236526025191)"><path d="M201.5 -346.3C260.7 -314.9 307.9 -259.9 347.3 -198.3C386.7 -136.7 418.4 -68.3 416.2 -1.3C414 65.8 378.1 131.7 337.6 191.4C297.1 251.2 252 304.9 195 338.6C138 372.4 69 386.2 0.7 385C-67.7 383.9 -135.3 367.7 -199 337.8C-262.6 307.9 -322.3 264.2 -362.4 205.6C-402.6 147 -423.3 73.5 -420.6 1.6C-417.8 -70.3 -391.6 -140.7 -351.5 -199.3C-311.3 -257.9 -257.2 -304.7 -196.2 -335.2C-135.3 -365.7 -67.7 -379.7 1.7 -382.7C71.2 -385.8 142.3 -377.8 201.5 -346.3" fill="#BB004B"></path></g></svg>
+                </div>
+                <!-- 파이썬 -->
+                <div class="card">
+                    <svg class="icon" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                        <defs>
+                            <linearGradient x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%" id="a">
+                                <stop stop-color="#387EB8" offset="0%"/>
+                                <stop stop-color="#366994" offset="100%"/>
+                            </linearGradient>
+                            <linearGradient x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%" id="b">
+                                <stop stop-color="#FFE052" offset="0%"/>
+                                <stop stop-color="#FFC331" offset="100%"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z" fill="url(#a)"/>
+                        <path d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z" fill="url(#b)"/>
+                    </svg>
+                    <h3>Python</h3>
+                    <p>
+                        · numpy를 활용하여 알고리즘을 설계할 수 있습니다.<br>
+                        · tkinter를 이용하여 GUI 개발을 한 경험이 있습니다.<br>
+                        · matplotlib, selenium, pandas를 활용하여 데이터 분석 및 시각화를 할 수 있습니다.
+                    </p>
+
+                    <svg class="wave wave1" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(453.32097636140605 449.5079377508457)"><path d="M207.3 -360.3C269.2 -323.2 320.3 -268.9 357 -205.9C393.7 -143 415.8 -71.5 410.8 -2.9C405.7 65.6 373.3 131.3 333.6 188.8C293.8 246.4 246.7 296 189.8 338.2C133 380.4 66.5 415.2 -1.6 417.9C-69.7 420.7 -139.3 391.3 -201.4 352.2C-263.5 313 -317.9 264 -355.9 203.7C-393.9 143.3 -415.5 71.7 -417.9 -1.4C-420.4 -74.5 -403.7 -149 -367.2 -211.8C-330.6 -274.6 -274 -325.6 -209.5 -361.2C-145 -396.8 -72.5 -416.9 0.1 -417.1C72.7 -417.2 145.3 -397.4 207.3 -360.3" ></path></g></svg>
+
+                    <svg class="wave wave2" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(452.04580578966534 438.3494561542767)"><path d="M203.2 -355.9C260 -319.1 300.5 -258 338.3 -194.6C376 -131.3 411 -65.6 415.8 2.8C420.6 71.2 395.2 142.3 358.4 207.3C321.5 272.2 273.3 331 211.6 369.7C150 408.5 75 427.2 0.2 426.9C-74.7 426.7 -149.3 407.3 -208.1 366.9C-266.8 326.5 -309.6 265 -346.3 200.3C-383 135.7 -413.5 67.8 -419.4 -3.4C-425.3 -74.7 -406.7 -149.3 -368.1 -210.7C-329.5 -272 -271 -320 -206.3 -352.4C-141.7 -384.7 -70.8 -401.4 1.2 -403.4C73.2 -405.4 146.3 -392.8 203.2 -355.9" fill="#BB004B"></path></g></svg>
+                    
+                    <svg class="wave wave3"viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(457.8155600772012 442.1086373865611)"><path d="M198.3 -335.6C262 -306.7 321.9 -263.6 358.3 -205.3C394.6 -147 407.3 -73.5 401.4 -3.4C395.5 66.7 370.9 133.3 334.2 190.9C297.4 248.5 248.5 297 190.7 332.4C133 367.7 66.5 389.8 -4.2 397.1C-74.8 404.3 -149.7 396.6 -210.3 362.9C-270.9 329.2 -317.3 269.6 -354.9 204.8C-392.5 140 -421.2 70 -418.2 1.8C-415.2 -66.5 -380.4 -133 -341.2 -195.1C-302 -257.1 -258.5 -314.8 -200.9 -347.1C-143.3 -379.5 -71.7 -386.6 -2.2 -382.9C67.3 -379.1 134.7 -364.5 198.3 -335.6" fill="#BB004B"></path></g></svg>
+                </div>
+            </div>
+        </div>
+        <!-- workflow -->
+        <div id="section3">
+        </div>
+        <!-- project -->
+        <div id="section4">
+            <h2>My project</h2>
+            <div id="projectContainer">
+                <div class="project" onClick="location.href='MyProject/cjazit/cjazit.html'">
+                    <img src="img_src/cj문화재단프로젝트.PNG" alt="">
+                    <div class="moving1"></div>
+                    <div class="moving2"></div>
+                    <div class="projectText">
+                        <h2>CJ문화재단</h2>
+                        <p>
+                            클론코딩 및
+                            디자인 개선,<br>
+                            팀 프로젝트 : 팀장역할 수행
+                        </p>
+                    </div>
+
+                </div>
+                <div class="project" onClick="location.href='MyProject/starbucks/index.html'">
+                    <img src="img_src/스타벅스클론.PNG" alt="">
+                    <div class="moving1"></div>
+                    <div class="moving2"></div>
+                    <div class="projectText">
+                        <h2>스타벅스</h2>
+                        <p>
+                            클론코딩,<br>
+                            개인프로젝트
+                        </p>
+                    </div>
+
+                </div>
+                <div class="project">
+                    <img src="img_src/jsgame.PNG" alt="">
+                    <div class="moving1"></div>
+                    <div class="moving2"></div>
+                    <div class="projectText">
+                        <h2>코딩촌의 진실</h2>
+                        <p>
+                            Javascript기반 웹게임 만들기,<br>
+                            팀 프로젝트 : 팀장역할 수행
+                        </p>
+                    </div>
+
+                </div>
+                <div class="project" onClick="location.href='MyProject/starbucks/index.html'">
+                    <img src="img_src/스타벅스클론.PNG" alt="">
+                    <div class="moving1"></div>
+                    <div class="moving2"></div>
+                    <div class="projectText">
+                        <h2>스타벅스</h2>
+                        <p>
+                            클론코딩,<br>
+                            개인프로젝트
+                        </p>
+                    </div>
+
+                </div>
+                <div class="project" onClick="location.href='MyProject/cjazit/cjazit.html'">
+                    <img src="img_src/cj문화재단프로젝트.PNG" alt="">
+                    <div class="moving1"></div>
+                    <div class="moving2"></div>
+                    <div class="projectText">
+                        <h2>CJ문화재단</h2>
+                        <p>
+                            클론코딩 및
+                            디자인 개선<br>
+                            팀 프로젝트 : 팀장역할 수행
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- contact me -->
+        <div id="section5">
+            <h2>" Get in touch "</h2>
+            <div id="contactContainer">
+                <div id = "myInfo">
+                    <div class="contact">
+                        이름 : 김준철
+                    </div>
+                    <div class="contact">
+                        생년월일 : 1995.08.14
+                    </div>
+                    <div class="contact">
+                        연락처 : 010-4037-3620
+                    </div>
+                    <div class="contact">
+                        주소지 : 대전광역시 서구
+                    </div>
+                    <div class="contact">
+                        Instagram : juncheol__
+                    </div>
+                    <div class="contact">
+                        Email : rine889@naver.com
+                    </div>
+                </div>
+                <div class="myvision">
+                    <p>
+                        충남대학교 건축학(5년) 전공<br>
+                        미래융합교육원 [빅데이터 UI 전문가] 과정(5개월) 수료<br>
+                        학부생때와 미래융합 교육원에서 다수의 팀 프로젝트를 진행했고, 그 속에서 팀장역할을 수행했습니다. 팀장이라는 역할은 프로젝트에 <strong>몰입하는 동기</strong>가 되었고, 매번 결과물에 대한 성취감을 경험할 수 있었습니다.<br>
+                        팀장으로써 팀 작업에서 가장 중요하게 생각한 두 가지 목표는 <strong>"프로젝트를 제한된 기간 안에 완료하는 것"</strong>과 <strong>"지속적으로 팀원간 커뮤니케이션을 유도하는 것"</strong>입니다.
+                        이를 통해 프로젝트 난이도와 개개인의 능력을 계산하는 시각을 가지게 됐고, 팀원간의 잦은 커뮤니케이션은 팀원 개개인을 능동적인 참여자로 이끌 수 있었습니다. <br>
+                        언제나 좋은 프로젝트와 제안을 기다립니다. 새로운 도전과제에 부딪히는것을 두려워하지 않으며, 그 속에서 발전하는 것을 즐기고 싶습니다.<br>
+                        <strong>언제나 편하게 연락바랍니다.<br>
+                        감사합니다.</strong>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="section6">
+            <div id="footerIcons">
+                <svg class="footI" onClick="location.href='https://www.instagram.com/juncheol__/'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <svg  class="footI" onClick="location.href='https://www.facebook.com/profile.php?id=100007212213033'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                <svg class="footI" onClick="location.href='https://github.com/juncheolishere'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </div>
+            <span>© 2022. Kim Jun Cheol. All rights reserved.</span>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- 바닐라 JS -->
+<script src="script.js"></script>
+<!-- React JS -->
+<script type="text/babel">
+
+    
+    // 실시간 반응형 자바스크립트 작성
+    const root = document.getElementById("interactivePoints");
+    const pointChildren = root.children;
+    // 컴포넌트의 첫 글자는 무조건 대문자여야 한다.
+    const widthValue = 20;
+    let myX ;
+    let myY ;
+    let rootX ;
+    let rootY ;
+    let pointMode = true;
+    section1.onmousemove = (event) =>
+    {
+        myX = event.pageX;
+        myY = event.pageY;
+        let onX = myX - rootX;
+        let onY = myY - rootY;
+        rootX = root.offsetLeft;;
+        rootY = root.offsetTop;
+        
+        if (pointMode)
+        {
+            for(let i = 0; i < pointChildren.length; i++)
+            {
+            let m = parseInt(Math.sqrt((pointChildren[i].offsetLeft-onX)**2+(pointChildren[i].offsetTop-onY)**2));
+            let deg = getAngle(onX - pointChildren[i].offsetLeft ,- onY + pointChildren[i].offsetTop) + 90;
+            if(m <=widthValue)
+            {
+                pointChildren[i].style.transform = 'rotate('+deg+'deg)';
+                pointChildren[i].style.width = '10px';
+            }
+            else if (m <=widthValue*2)
+            {
+                pointChildren[i].style.transform = 'rotate('+deg+'deg)';
+                pointChildren[i].style.width = '8px';
+            }
+            else if (m <= widthValue*3)
+            {
+                pointChildren[i].style.transform = 'rotate('+deg+'deg)';
+                pointChildren[i].style.width = '6px';
+            }
+            else if (m <= widthValue*4)
+            {
+                pointChildren[i].style.transform = 'rotate('+deg+'deg)';
+                pointChildren[i].style.width = '4px';
+            }
+            else
+            {
+                pointChildren[i].style.transform = 'rotate(0deg)';
+                pointChildren[i].style.width = '2px';
+            }
+            }
+        }
+        else
+        {
+            for(let i = 0; i < pointChildren.length; i++)
+            {
+            let m = parseInt(Math.sqrt((pointChildren[i].offsetLeft-onX)**2+(pointChildren[i].offsetTop-onY)**2));
+            let deg = getAngle(onX - pointChildren[i].offsetLeft ,- onY + pointChildren[i].offsetTop) + 90;
+            
+            if(m <=widthValue)
+            {
+                pointChildren[i].style.transform = 'scale(9,9)';
+            }
+            else if (m <=widthValue*2)
+            {
+                pointChildren[i].style.transform = 'scale(7,7)';
+            }
+            else if (m <= widthValue*3)
+            {
+                pointChildren[i].style.transform = 'scale(5,5)';
+            }
+            else if (m <= widthValue*4)
+            {
+                pointChildren[i].style.transform = 'scale(3,3)';
+            }
+            else
+            {
+                pointChildren[i].style.transform = 'scale(1,1)';
+            }
+            }
+        }
+
+    }
+
+
+    function getAngle(X,Y){
+        var r = Math.atan2(X, Y);
+        // alert(r+'radians');
+        if (r < 0)
+        r += Math.PI * 2;
+        var d = r*180/Math.PI;
+        while (d < 0)
+        d += 360;
+        // alert(d+'degrees');
+        return d
+    }
+
+    window.onresize = () =>
+    {
+        draw();
+    }
+    const style1 = getComputedStyle(root);
+
+    function draw() {
+        let xCnt = parseInt(parseInt(style1.width.split("p")[0]) / widthValue);
+        let yCnt = parseInt(parseInt(style1.height.split("p")[0]) / widthValue);
+        let k = [];
+        let n=-1;
+        for (let i=0; i<yCnt*xCnt;i++)
+        {
+            let m = i%xCnt;
+            if (m == 0)
+            {
+                n+=1
+            }
+            if (n*widthValue > parseInt(parseInt(style1.height.split("p")[0])))
+            {
+            }
+            else
+            {
+                k[i]=<div 
+                class="aabcc"
+                style={{
+                left: m*widthValue+"px",
+                top: n*widthValue+"px",
+                backgroundColor: pointMode ? '#fffde4' :'#376a80' 
+            }}
+            />;
+            }
+        }
+        ReactDOM.render(k, root);
+    }
+
+    draw();
+    
+
+
+</script>
+</html>
