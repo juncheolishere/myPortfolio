@@ -338,7 +338,7 @@ h2{
     position: relative;
     display: block;
     font-size: 40px;
-    color: black;
+    color: #002342;
     font-weight: bold;
     text-align: center;
     padding-top: 50px;
@@ -349,6 +349,7 @@ h2{
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 18px;
     font-weight: bold;
+    color: #002342;
     text-shadow: 2px 2px 2px rgba(229, 246, 255, 0.685);
 }
 .star1 {
@@ -358,6 +359,13 @@ h2{
     transition: 1s;
     animation: movingStar 10s infinite linear;
 }
+.star5 {
+    left: calc(5%);
+    top: 280px;
+    opacity: 0;
+    transition: 1s;
+    animation: movingStar 40s infinite linear;
+}
 .star2 {
     left: calc(10%);
     top: 400px;
@@ -365,20 +373,31 @@ h2{
     transition: 1s;
     animation: movingStar 20s infinite linear;
 }
-.star3 {
-    right: calc(20%);
-    top: 200px;
+
+
+.star6 {
+    right: calc(28%);
+    top: 180px;
     opacity: 0;
     transition: 1s;
-    animation: movingStar 15s infinite linear;
+    animation: movingStar 35s infinite linear;
 }
 .star4 {
-    right: calc(5%);
-    top: 300px;
+    right: calc(10%);
+    top: 280px;
     opacity: 0;
     transition: 1s;
     animation: movingStar 30s infinite linear;
 }
+.star3 {
+    right: calc(20%);
+    top: 380px;
+    opacity: 0;
+    transition: 1s;
+    animation: movingStar 15s infinite linear;
+}
+
+
 
 @keyframes movingStar {
     0% {
@@ -420,15 +439,36 @@ h2{
     padding-bottom: 30px;
     position: relative;
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     width: calc(80%);
     left: calc(10%);
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
+    font-weight: bold;
+    text-align: start;
+    color: #002342;
+    text-shadow: 1px 1px 1px #fffde4;
+    transition: 0.5s;
+}
+#archi{
+    display: flex;
+    width: 350px;
+    flex-flow: column;
+    opacity: 0;
+    transition: 0.5s;
+}
+#web{
+    display: flex;
+    width: 350px;
+    opacity: 0;
+    transition: 0.5s;
+    flex-flow: column;
 }
 
+#section4{
+    padding-bottom: 150px;
+}
 
 /* 바꿀부분 */
 #transformLine > svg {

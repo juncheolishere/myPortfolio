@@ -198,6 +198,16 @@ function nightMod()
     }
     document.getElementsByClassName("icon")[0].style.fill = "#fffde4";
 
+    // section3 변경
+    AmIWho.style.color = "#fffde4";
+    AmIWho.style.textShadow = "1px 1px 1px #002342"
+    iAmWho.style.color = "#fffde4";
+    for(let i = 0 ; i < mySpace.length; i++)
+    {
+        mySpace[i].style.color = "#fffde4";
+        mySpace[i].style.textShadow = "1px 1px 1px #002342";
+    }
+
     // section4 변경
     section4.children[0].style.color = "white";
 
@@ -257,6 +267,16 @@ function dayMod()
         card[i].children[2].style.color = "#002342";
     }
     document.getElementsByClassName("icon")[0].style.fill = "black";
+
+    // section3 변경
+    AmIWho.style.color = "#002342";
+    AmIWho.style.textShadow = "1px 1px 1px #fffde4"
+    iAmWho.style.color = "#002342";
+    for(let i = 0 ; i < mySpace.length; i++)
+    {
+        mySpace[i].style.color = "#002342";
+        mySpace[i].style.textShadow = "1px 1px 1px #fffde4";
+    }
 
     // section4 변경
     section4.children[0].style.color = "black";
@@ -368,11 +388,21 @@ let myInfo = new TypeIt(iAmWho, {
   .type("웹개발자,")
   .pause(2000)
   .move(9)
+  .pause(4000)
+  .delete(14, {speed:500})
   .pause(2000)
+  .type("잘 부탁드립니다.")
 
 
 
 const mySpace = document.getElementsByClassName("mySpace");
+const archi = document.getElementById("archi");
+const web = document.getElementById("web");
+const AmIWho = document.getElementById("AmIWho");
+
+let timer1;
+let timer2;
+let timer3;
 
 let scene2 = new ScrollMagic.Scene({triggerElement: section3, duration : "50%"})
 .addTo(controller)
@@ -384,6 +414,18 @@ let scene2 = new ScrollMagic.Scene({triggerElement: section3, duration : "50%"})
        {
         mySpace[i].style.opacity = "1"
         }
+        AmIWho.style.opacity = "1";
+        timer1 = setTimeout(function(){
+            archi.style.opacity="1";
+        }, 10000)
+        timer2 = setTimeout(function(){
+            web.style.opacity="1";
+        }, 15400)
+        // timer3 = setTimeout(function(){
+        //     archi.style.opacity="0";
+        //     web.style.opacity="0";
+        // }, 25000)
+        
     }
     else
     {
@@ -392,6 +434,12 @@ let scene2 = new ScrollMagic.Scene({triggerElement: section3, duration : "50%"})
        {
         mySpace[i].style.opacity = "0"
         }
+        AmIWho.style.opacity = "0";
+        archi.style.opacity="0";
+        web.style.opacity="0";
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+        // clearTimeout(timer3);
     }
 })
 
