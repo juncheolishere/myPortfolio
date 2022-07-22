@@ -13,6 +13,17 @@
     <meta property="og:image" content="img_src/myAvatar.png">
     <meta property="og:description" content="김준철의 포트폴리오 웹사이트입니다.">
     <meta property="og:locale" content="en_US">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- scrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <!-- TypeIt -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+
 </head>
 <body>
     <div id="wrap">
@@ -71,7 +82,26 @@
         </div>
         <!-- my stack -->
         <div id="section2">
-            <h2>What I'm good at</h2>
+            <div class="wordFrame">
+                <div class="words">
+                    <span>What</span>
+                    <strong>What</strong>
+                </div>
+                <div class="words">
+                    <span>I'm</span>
+                    <strong>I'm</strong>
+                </div>
+                <div class="words">
+                    <span>Good</span>
+                    <strong>Good</strong>
+
+                </div>
+                <div class="words">
+                    <span>At</span>
+                    <strong>At</strong>
+
+                </div>
+            </div>
             <!-- 카드뭉치 -->
             <div id="showingContainer">
                 
@@ -164,12 +194,37 @@
                 </div>
             </div>
         </div>
-        <!-- workflow -->
+        <!-- who am i? -->
         <div id="section3">
+            <div class="mySpace star1">95년 8월생</div>
+            <div class="mySpace star2">010 - 4037 - 3620</div>
+            <div class="mySpace star3">대전 서구 둔산동</div>
+            <div class="mySpace star4">Instagram: juncheol__</div>
+            <span id="whoAmI">Who<br>Am<br>I?</span>
+            <span id="iAmWho"></span>
+            <div id="AmIWho">
+                <div class="archi">
+                    <span>충남대학교 건축학과(5년제) 전공</span>
+                    <span>Photoshop, Autocad, SketchUp, Revit,</span>
+                    <span>Rhino, V-ray, Rumion, Enscape 툴 활용 가능</span>
+                    <span>학부 특성상 밤샘작업에 특화</span>
+                    <span>30회 이상 팀프로젝트 참여</span>
+                    <span>발표에대한 두려움이 적다</span>
+                    
+                </div>
+            </div>
         </div>
         <!-- project -->
         <div id="section4">
-            <h2>My project</h2>
+            <div id="transformLine">
+                <svg viewbox="0 0 3 2">
+                    <text x="0" y="1" font-size="1" fill="#fffde4" stroke-width=".015"  >
+                        My 
+                        <tspan x="0" y="2">Works</tspan>
+                    </text>
+                  </svg>
+            </div>
+            <div id="ab">
             <div id="projectContainer">
                 <div class="project" onClick="location.href='MyProject/cjazit/cjazit.html'">
                     <img src="img_src/cj문화재단프로젝트.PNG" alt="">
@@ -240,6 +295,7 @@
                 </div>
             </div>
         </div>
+        </div>
         <!-- contact me -->
         <div id="section5">
             <h2>" Get in touch "</h2>
@@ -293,15 +349,16 @@
         </div>
     </div>
 </body>
+
 <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 <!-- 바닐라 JS -->
 <script src="script.js"></script>
 <!-- React JS -->
 <script type="text/babel">
 
-    
+
     // 실시간 반응형 자바스크립트 작성
     const root = document.getElementById("interactivePoints");
     const pointChildren = root.children;
@@ -440,4 +497,6 @@
 
 
 </script>
+
+
 </html>

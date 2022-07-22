@@ -211,16 +211,42 @@ h2{
     flex-flow: row wrap;
     width: calc(100%);
     justify-content: space-evenly;
-    margin-top: 300px;
+
+
 }
-#section2 > h2 {
-    display: inline;
+.wordFrame {
+    display: flex;
+    width: calc(80%);
+    flex-flow: column;
     position: relative;
-    top: 280px;
+    padding-top: 100px;
+    padding-bottom: 20px;
     left: calc(10%);
-    margin-bottom: 10px;
+}
+.words > span {
+    position: absolute;
+    right: calc(100%);
+    color:#002342;
+    transition: 2s;
+    top: 5px;
+}
+.words > strong {
+    position: absolute;
+    right: calc(0%);
+    transition: 2s;
+    color: #fffde4;
+}
+.words {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-size: 45px;
+    height: 54px;
+    width: calc(100%);
     font-family: 'Roboto', sans-serif;
 }
+
+
 .card {
     display: flex;
     position: relative;
@@ -277,7 +303,6 @@ h2{
 .wave3 {
     position: absolute;
     height: calc(300%);
-
     animation: rotateWave 25s infinite linear;
 }
 .wave3 path {
@@ -290,20 +315,159 @@ h2{
     }
 }
 
-#section4 > h2 {
-    display: inline;
+
+
+#section3 {
     position: relative;
-    top: 280px;
+}
+#whoAmI {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    display: inline-block;
+    position: relative;
+    width: calc(80%);
+    text-align: center;
+    font-size: 75px;
+    margin-top: 200px;
+    margin-left: calc(10%);
+    color: #fffde4;
+    line-height: 4rem;
+    font-weight: bold;
+    text-shadow: 3px 10px 0px #002342;
+}
+#iAmWho {
+    position: relative;
+    display: block;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+.mySpace {
+    position: absolute;
+    display: inline-block;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(229, 246, 255, 0.685);
+}
+.star1 {
+    left: calc(20%);
+    top: 190px;
+    opacity: 0;
+    transition: 1s;
+    animation: movingStar 10s infinite linear;
+}
+.star2 {
     left: calc(10%);
-    margin-bottom: 10px;
+    top: 400px;
+    opacity: 0;
+    transition: 1s;
+    animation: movingStar 20s infinite linear;
+}
+.star3 {
+    right: calc(20%);
+    top: 200px;
+    opacity: 0;
+    transition: 1s;
+    animation: movingStar 15s infinite linear;
+}
+.star4 {
+    right: calc(5%);
+    top: 300px;
+    opacity: 0;
+    transition: 1s;
+    animation: movingStar 30s infinite linear;
+}
+
+@keyframes movingStar {
+    0% {
+        transform: rotate(0deg) translate(0px,0px);
+    }
+    10% {
+        transform: rotate(-8deg) translate(-5px,-5px);
+    }
+    20% {
+        transform: rotate(-16deg) translate(4px,-5px);
+    }
+    30% {
+        transform: rotate(-8deg) translate(4px,3px);
+    }
+    40% {
+        transform: rotate(0deg) translate(0px,1px);
+    }
+    50% {
+        transform: rotate(5deg) translate(-3px,2px);
+    }
+    60% {
+        transform: rotate(10deg) translate(-8px,-2px);
+    }
+    70% {
+        transform: rotate(15deg) translate(0px,-8px);
+    }
+    80% {
+        transform: rotate(10deg) translate(3px,-5px);
+    }
+    90% {
+        transform: rotate(5deg) translate(-1px,4px);
+    }
+    100% {
+        transform: rotate(0deg) translate(0px,0px);
+    }
+}
+#AmIWho{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: calc(80%);
+    left: calc(10%);
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+/* 바꿀부분 */
+#transformLine > svg {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: flex;
+    left: calc(100%);
+    height: 250px;
+    transition: 2s;
+
+}
+#transformLine > svg > text {
+    font-family:'Roboto', sans-serif;
+    text-anchor: start;
+    text-shadow: -5px -3px 0px #002342;
+}
+#transformLine {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: calc(80%);
+    left: calc(10%);
+    overflow: hidden;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+#ab{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 #projectContainer {
     display: flex;
+    position: relative;
     flex-flow: row wrap;
-    width: calc(100%);
-    justify-content: center;
-    margin-top: 300px;
+    max-width: 1200px;
+    
+    justify-content:center;
+    transition: 2s;
 }
 .project {
     display: flex;
@@ -317,6 +481,9 @@ h2{
     overflow: hidden;
     cursor: pointer;
     box-shadow: 10px 10px 0px 0px #c473b6;
+    transform: rotate(8deg);
+    transition: 0.3s;
+    opacity: 0;
 }
 .project img {
     position: relative;

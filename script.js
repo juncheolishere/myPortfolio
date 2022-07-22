@@ -1,10 +1,12 @@
 // 상단 고정 네비게이션
 const headNav = document.getElementById("headNav");
 const anchor = document.getElementsByClassName("anchor");
+const wordFrame = document.getElementsByClassName("wordFrame");
 let menu = false;
 window.onwheel = (event) => 
 {
     headNav.style.transition = "0.5s"
+    // 스크롤 다운
     if (event.deltaY >= 0)
     {
         headNav.style.opacity = "0";
@@ -25,6 +27,25 @@ window.onwheel = (event) =>
             }, 400)
         }
 
+        if (section2.offsetTop<= window.scrollY +innerHeight )
+        {
+            setTimeout(()=>{
+                wordFrame[0].children[0].children[0].style.right="calc(5px)";
+                wordFrame[0].children[0].children[0].style.color="#002342";
+            },500);
+            setTimeout(()=>{
+                wordFrame[0].children[1].children[0].style.right="calc(5px)";
+                wordFrame[0].children[1].children[0].style.color="#002342";
+            },1000);
+            setTimeout(()=>{
+                wordFrame[0].children[2].children[0].style.right="calc(5px)";
+                wordFrame[0].children[2].children[0].style.color="#002342";
+            },1500);
+            setTimeout(()=>{
+                wordFrame[0].children[3].children[0].style.right="calc(5px)";
+                wordFrame[0].children[3].children[0].style.color="#002342";
+            },2000)
+        }
     }
     else
     {
@@ -48,6 +69,18 @@ window.onwheel = (event) =>
 
     }
 }
+
+const transformLine = document.getElementById("transformLine");
+// setInterval(()=>{
+//     // 시작시점
+//     if(section4.offsetTop<= window.scrollY + innerHeight)
+//     {
+//         if(section4.offsetTop == window.scrollY)
+//         {
+//         }
+//     }
+
+// },16)
 
 // 메뉴 토글 ON / OFF / navToggle
 const navToggle = document.getElementById("navToggle");
@@ -264,3 +297,101 @@ function scrollToWhere(where) {
         window.scrollTo({left : 0, top : section5.offsetTop, behavior: "smooth"})
     }
 }
+
+
+// myworks 애니메이션
+let movingSpan = document.getElementById("transformLine");
+movingSpan = movingSpan.children[0];
+const projectContainer = document.getElementById("projectContainer");
+let controller = new ScrollMagic.Controller();
+let scene1 = new ScrollMagic.Scene({triggerElement: section4, duration : "30%"})
+.addTo(controller)
+.on("progress", function(e) {
+    if ((e.progress.toFixed(2)) == 1)
+    {
+        movingSpan.style.left = "calc(0%)"
+    }
+    else
+    {
+        movingSpan.style.left = "calc(100%)"
+    }
+    // movingSpan.style.left = "calc(" + (100 - parseInt(e.progress.toFixed(2)*100)) +"%)";
+    if ((e.progress.toFixed(2)) == 1)
+    {
+        projectContainer.style.opacity = "1";
+        
+        for (let i = 0; i < projectContainer.childElementCount; i++)
+        {
+            setTimeout(()=>{
+                projectContainer.children[i].style.transform = "rotate(-10deg)";
+                projectContainer.children[i].style.opacity = "1";
+            }, i*600)
+            setTimeout(()=>{
+                projectContainer.children[i].style.transform = "rotate(10deg)";
+            },i*600 + 300)
+            setTimeout(()=>{
+                projectContainer.children[i].style.transform = "rotate(0deg)";
+            },i*600 + 600)
+        }
+    }
+    else if ((e.progress.toFixed(2)) < 1)
+    {
+        projectContainer.style.opacity = "0";
+        for (let i = 0; i < projectContainer.childElementCount; i++)
+        {
+            projectContainer.children[i].style.opacity = "0";                
+        }
+    }
+})
+
+
+
+const section3 = document.getElementById("section3");
+
+let iAmWho = document.getElementById("iAmWho");
+
+let myInfo = new TypeIt(iAmWho, {
+    speed: 100
+  })
+  .type("안녕하세요.")
+  .pause(500)
+  .type(" 김준철 입니다.")
+  .pause(4000)
+  .move(-9)
+  .pause(500)
+  .delete(6, {speed:500})
+  .pause(500)
+  .type("건축학도,")
+  .pause(4000)
+  .delete(5, {speed:500})
+  .pause(500)
+  .type("웹개발자,")
+  .pause(2000)
+  .move(9)
+  .pause(2000)
+
+
+
+const mySpace = document.getElementsByClassName("mySpace");
+
+let scene2 = new ScrollMagic.Scene({triggerElement: section3, duration : "50%"})
+.addTo(controller)
+.on("progress", function(e) {
+    if (e.progress.toFixed(2) ==1)
+    {
+        myInfo.go();
+        for (let i = 0; i<mySpace.length; i++)
+       {
+        mySpace[i].style.opacity = "1"
+        }
+    }
+    else
+    {
+        myInfo.reset();
+        for (let i = 0; i<mySpace.length; i++)
+       {
+        mySpace[i].style.opacity = "0"
+        }
+    }
+})
+
