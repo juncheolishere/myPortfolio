@@ -149,7 +149,6 @@ const section2 = document.getElementById("section2");
 const wave1 = document.getElementsByClassName("wave1");
 const card = document.getElementsByClassName("card");
 const section4 = document.getElementById("section4");
-const section5 = document.getElementById("section5");
 const contact = document.getElementsByClassName("contact");
 const myvision = document.getElementsByClassName("myvision");
 const section6 = document.getElementById("section6");
@@ -211,12 +210,7 @@ function nightMod()
     // section4 변경
     section4.children[0].style.color = "white";
 
-    // section5 변경
-    section5.children[0].style.color = "white";
-    for(let i = 0; i < contact.length; i++)
-    {
-        contact[i].style.color = "#fffde4";
-    }
+
 
     // section6 변경
     section6.style.backgroundColor = "#fffde4";
@@ -281,12 +275,7 @@ function dayMod()
     // section4 변경
     section4.children[0].style.color = "black";
 
-    // section5 변경
-    section5.children[0].style.color = "black";
-    for(let i = 0; i < contact.length; i++)
-    {
-        contact[i].style.color = "#033c6e";
-    }
+
 
     // section6 변경
     section6.style.backgroundColor = "#164b77";
@@ -308,14 +297,15 @@ function scrollToWhere(where) {
     {
         window.scrollTo({left : 0, top : section2.offsetTop, behavior: "smooth"})
     }
+    else if (where == "About")
+    {
+        window.scrollTo({left : 0, top : section3.offsetTop, behavior: "smooth"})
+    }
     else if (where == "Archiving")
     {
         window.scrollTo({left : 0, top : section4.offsetTop, behavior: "smooth"})
     }
-    else if (where == "About")
-    {
-        window.scrollTo({left : 0, top : section5.offsetTop, behavior: "smooth"})
-    }
+    
 }
 
 
@@ -392,6 +382,9 @@ let myInfo = new TypeIt(iAmWho, {
   .delete(14, {speed:500})
   .pause(2000)
   .type("잘 부탁드립니다.")
+  .pause(4000)
+  .delete(9, {speed:500})
+  .type("스크롤을 계속 내려주세요.")
 
 
 
@@ -420,7 +413,7 @@ let scene2 = new ScrollMagic.Scene({triggerElement: section3, duration : "50%"})
         }, 10000)
         timer2 = setTimeout(function(){
             web.style.opacity="1";
-        }, 15400)
+        }, 15800)
         // timer3 = setTimeout(function(){
         //     archi.style.opacity="0";
         //     web.style.opacity="0";
