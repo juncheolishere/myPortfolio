@@ -436,3 +436,68 @@ let scene2 = new ScrollMagic.Scene({triggerElement: section3, duration : "50%"})
     }
 })
 
+let depth = undefined;
+let depthCnt = undefined;
+let showingSlide = undefined;
+
+const openDetail = (type) => {
+    depth = 0;
+    depthCnt = 0;
+    
+    document.body.style.overflowY = "hidden";
+    if (type == "cmProject")
+    {
+        showingSlide = document.getElementById("cmProject");
+        showingSlide.style.display = "flex";
+        showingSlide.children[0].children[0].addEventListener("click",closeDetail,{once:true})
+    }
+    else if (type == "recruitProject")
+    {
+        showingSlide = document.getElementById("recruitProject");
+        showingSlide.style.display = "flex";
+        showingSlide.children[0].children[0].addEventListener("click",closeDetail,{once:true})
+    }
+    else if (type == "melonProject")
+    {
+        showingSlide = document.getElementById("melonProject");
+        showingSlide.style.display = "flex";
+        showingSlide.children[0].children[0].addEventListener("click",closeDetail,{once:true})
+    }
+    console.log(showingSlide)
+}
+
+const closeDetail = () => {
+    document.body.style.overflowY = "visible";
+    showingSlide.style.display = "none";document.getElementById("cmProject").style.display = "none";
+    showingSlide = undefined;
+}
+
+
+const slidePrev = (obj) => {
+    const unitWith = parseInt(getComputedStyle(obj.parentNode.children[3].children[0]).width.split("p")[0]);
+    const sumWidth = obj.parentNode.children[3].childElementCount * unitWith;
+    depthCnt -= 1;
+    if (depthCnt < 0)
+    {
+        depthCnt = parseInt(sumWidth/unitWith)-1;
+    }
+    obj.parentNode.children[3].style.transform = "translate("+(-depthCnt*unitWith)+"px)"
+}
+const slideNext = (obj) => {
+    const unitWith = parseInt(getComputedStyle(obj.parentNode.children[3].children[0]).width.split("p")[0]);
+    const sumWidth = obj.parentNode.children[3].childElementCount * unitWith;
+    depthCnt += 1;
+    if (depthCnt >= obj.parentNode.children[3].childElementCount)
+    {
+        depthCnt = 0;
+    }
+    obj.parentNode.children[3].style.transform = "translate("+(-depthCnt*unitWith)+"px)"
+}
+
+setInterval(()=>{
+    if(showingSlide)
+    {
+        const unitWith = parseInt(getComputedStyle(showingSlide.children[0].children[3].children[0]).width.split("p")[0]);
+        showingSlide.children[0].children[3].style.transform = "translate("+(-depthCnt*unitWith)+"px)"
+    }
+},16)

@@ -285,23 +285,588 @@
                     </div>
 
                 </div>
-                <div class="project" onClick="location.href='https://juncheolishere.github.io/redesign_cjazit/'">
-                    <img src="img_src/cj문화재단프로젝트.PNG" alt="">
+                <div class="project" onclick="openDetail('cmProject')">
+                    <img src="img_src/[빅데이터구축]큼_프로젝트5.PNG" alt="">
                     <div class="moving1"></div>
                     <div class="moving2"></div>
                     <div class="projectText">
-                        <h2>CJ문화재단</h2>
+                        <h2>[빅데이터구축]<br>큼_프로젝트</h2>
                         <p>
-                            클론코딩 및
-                            디자인 개선<br>
-                            팀 프로젝트 : 팀장역할 수행
+                            빅데이터구축 프로그램,<br>
+                            개인 프로젝트
                         </p>
                     </div>
-
+                </div>
+                <div class="project" onclick="openDetail('recruitProject')">
+                    <img src="img_src/[빅데이터분석 및 시각화]채용데이터 분석 및 시각화8.PNG" alt="">
+                    <div class="moving1"></div>
+                    <div class="moving2"></div>
+                    <div class="projectText">
+                        <h2>[빅데이터분석 및 시각화]<br>채용데이터 분석</h2>
+                        <p>
+                            빅데이터분석 및 시각화,<br>
+                            개인 프로젝트
+                        </p>
+                    </div>
+                </div>
+                <div class="project" onclick="openDetail('melonProject')">
+                    <img src="img_src/[데이터시각화]멜론차트1.PNG" alt="">
+                    <div class="moving1"></div>
+                    <div class="moving2"></div>
+                    <div class="projectText">
+                        <h2>[빅데이터 데이터프레임 분석]<br>멜론차트 분석</h2>
+                        <p>
+                            빅데이터 데이터프레임화 및 시각화,<br>
+                            개인 프로젝트
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         </div>
+        <!-- 오버레이 설명 상자 -->
+        <div id="cmProject">
+            <div class="projectDetail">
+                <div 
+                style=
+                "z-index: 16;
+                display: flex;
+                position:fixed;
+                right: 50px;
+                top:50px;
+                width: 15px;
+                height: 15px;">
+                    <div 
+                    style=
+                    "cursor: pointer;
+                    position: absolute;
+                    width:15px;
+                    height:2px;
+                    background-color: white;
+                    transform: rotate(45deg);"></div>
+                    <div 
+                    style=
+                    "cursor: pointer;
+                    position: absolute;
+                    width:15px;
+                    height:2px;
+                    background-color: white;
+                    transform: rotate(-45deg);"></div>
+                </div>
+                <div class="detailPrev" onclick="slidePrev(this)">&lt;</div>
+                <div class="detailNext" onclick="slideNext(this)">&gt;</div>
+                <div class="slideWrap">
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        큼_프로젝트(Crawring Machine)</h1>
+                        <div 
+                        style=
+                        "color: white;
+                        display: flex;
+                        flex-flow: column;
+                        width: calc(80%);
+                        position: relative;">
+                            <h2 
+                            style=
+                            "display:flex;
+                            width: calc(100%);">
+                            프로젝트 개요</h2>
+                            <h5 
+                            style=
+                            "display:flex;
+                            width: calc(100%);">
+                            #Python - Tkinter(GUI), Selenium 라이브러리 활용</h5>
+                            <h3 
+                            style=
+                            "display:flex;
+                            width: calc(100%);
+                            margin-top: 30px;">
+                            빅데이터 분석을 위한 분석용 데이터 구축 전략</h3>
+                            <p 
+                            style=
+                            "display:flex;
+                            width: calc(100%);
+                            flex-flow: row wrap;
+                            margin-top: 30px;
+                            font-size: 0.9rem;">
+빅데이터 분석에 앞서 분석용 데이터를 구축하고자 CM_큼 프로젝트를 진행했습니다.
+크롤링 머신의 줄임말인 “큼”은 유저가 원하는 사이트에서 키보드 및 마우스 입력을 받을 수 있도록 하고,
+원하는 데이터를 무제한적으로 얻기 위해 크롤링 된 데이터 임시저장하도록 설계했습니다.
+또한 모든 페이지의 정보를 얻기 위해 페이지를 넘기는 행동처럼 반복적인 행동을 필요로 하는 크롤링을 가능하게 하도록 고민해야 했습니다.
+그 결과 반복적인 행동의 시점을 정할 수 있도록 만들어서 반복적인 데이터 구축을 실현시키고자 노력했습니다.
+또한 구축에 그치지 않고 원하는 매크로 및 행동의 시퀀스를 저장하도록 만들어
+유저가 원하는 매크로 및 행동을 원할 때마다 수정 및 저장, 변경할 수 있도록 했습니다.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        1. Tkinter(GUI)를 이용한 그래픽 유저 인터페이스</h1>
+                        <p style="
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        color: white;
+                        font-size: 0.9rem;
+                        ">
+                        Tkinter 라이브러리를 이용하여 그래픽 유저 인터페이스를 구현했다.
+                        해당 인터페이스를 클릭하고 원하는 데이터를 입력하여 저장하면, 저장된 순서에 따라 프로그램이 실행된다.
+                        </p>
+                        <img src="img_src/[빅데이터구축]큼_프로젝트2.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                    </div>
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        2. 실행 후 데이터 저장 형태</h1>
+                        <img src="img_src/[빅데이터구축]큼_프로젝트4.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                        <img src="img_src/[빅데이터구축]큼_프로젝트5.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                    </div>
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        3. 시퀀스 저장 및 불러오기</h1>
+                        <img src="img_src/[빅데이터구축]큼_프로젝트6.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                        <img src="img_src/[빅데이터구축]큼_프로젝트7.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                    </div>
+                    <div class="slide">
+                        <h3 
+                        style=
+                        "width:calc(80%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        설정한 매크로를 진행시킬 뿐 아니라, 시퀀스를 저장 및 불러오기를 수 있게 만들었습니다.
+                        데이터 구축을 위한 시퀀스를 수정 및 삭제, 저장할 수 있게 설계하여 데이터의 유지/보수/관리가 용이하도록 의도했습니다.
+                        하단에 프로그램 소스가 저장된 깃허브 주소를 연결시켰으니, 궁금하신 분들은 해당 사이트에 접속하여 확인해주시기 바랍니다.
+                        <br><br>
+                        Github : <a href="https://github.com/juncheolishere/CM-_-"
+                                    style="
+                                    text-decoration:none;
+                                    color: white;
+                                    "
+                        >클릭하세요!</a>
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="recruitProject">
+            <div class="projectDetail">
+                <div 
+                style=
+                "z-index: 16;
+                display: flex;
+                position:fixed;
+                right: 50px;
+                top:50px;
+                width: 15px;
+                height: 15px;">
+                    <div 
+                    style=
+                    "cursor: pointer;
+                    position: absolute;
+                    width:15px;
+                    height:2px;
+                    background-color: white;
+                    transform: rotate(45deg);"></div>
+                    <div 
+                    style=
+                    "cursor: pointer;
+                    position: absolute;
+                    width:15px;
+                    height:2px;
+                    background-color: white;
+                    transform: rotate(-45deg);"></div>
+                </div>
+                <div class="detailPrev" onclick="slidePrev(this)">&lt;</div>
+                <div class="detailNext" onclick="slideNext(this)">&gt;</div>
+                <div class="slideWrap">
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        [빅데이터분석 및 시각화]채용데이터 분석 및 시각화</h1>
+                        <div 
+                        style=
+                        "color: white;
+                        display: flex;
+                        flex-flow: column;
+                        width: calc(80%);
+                        position: relative;">
+                            <h2 
+                            style=
+                            "display:flex;
+                            width: calc(100%);">
+                            프로젝트 개요</h2>
+                            <h5 
+                            style=
+                            "display:flex;
+                            width: calc(100%);">
+                            #Python - Tkinter(GUI), Matplotlib, Numpy 라이브러리 활용</h5>
+                            <h3 
+                            style=
+                            "display:flex;
+                            width: calc(100%);
+                            margin-top: 30px;">
+                            데이터 분석 전략</h3>
+                            <p 
+                            style=
+                            "display:flex;
+                            width: calc(100%);
+                            flex-flow: row wrap;
+                            margin-top: 30px;
+                            font-size: 0.9rem;">
+큼 프로젝트에서 구축한 데이터를 바탕으로 채용 데이터를 분석하는 프로그램을 개발했습니다. 
+사람인에서 "개발자" 키워드로 검색된 8352개의 데이터를 크롤링하여 분석했습니다.
+해당 프로그램은 지역 -> 희망연봉 -> 학력 -> 고용 형태 -> 경력을 입력받아 지역별 해당 채용정보의 건 수를 
+Matplotlib 라이브러리를 통해 bar_chat 형태로 시각화합니다. 데이터의 전처리와 중간 필터링 과정에 고민을 많이 했으며, 이를 시각화하고자 tkinter와 matplotlib을 학
+습하여 구현했습니다. 중간 필터링을 실현시키기 위해서 Tkinter 에 선택한 항목을 선택하면 1, 선택하지 않으면 0인 배열로 저장했습니다.
+이후 후처리 필터링 과정에서 1과 0을 이용해서 데이터를 가감했습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        1. 채용데이터 필터링 과정</h1>
+                        <div style="
+                        display:flex;
+                        flex-flow:column;
+                        width:calc(100%);
+                        align-items: center;
+                        ">
+                            <img src="img_src/[빅데이터분석 및 시각화]채용데이터 분석 및 시각화2.PNG" alt="" style=
+                            "
+                            position: relative;
+                            display: flex;
+                            width: calc(50%);
+                            min-width: 400px;
+                            ">
+                            <img src="img_src/[빅데이터분석 및 시각화]채용데이터 분석 및 시각화3.PNG" alt="" style=
+                            "
+                            position: relative;
+                            display: flex;
+                            width: calc(50%);
+                            min-width: 400px;
+                            ">
+                            <img src="img_src/[빅데이터분석 및 시각화]채용데이터 분석 및 시각화4.PNG" alt="" style=
+                            "
+                            position: relative;
+                            display: flex;
+                            width: calc(50%);
+                            min-width: 400px;
+                            ">
+                            <img src="img_src/[빅데이터분석 및 시각화]채용데이터 분석 및 시각화5.PNG" alt="" style=
+                            "
+                            position: relative;
+                            display: flex;
+                            width: calc(50%);
+                            min-width: 400px;
+                            ">
+                            <img src="img_src/[빅데이터분석 및 시각화]채용데이터 분석 및 시각화6.PNG" alt="" style=
+                            "
+                            position: relative;
+                            display: flex;
+                            width: calc(50%);
+                            min-width: 400px;
+                            ">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        2. 실행 후 데이터 시각화</h1>
+                        <p 
+                        style=
+                        "display:flex;
+                        width: calc(40%);
+                        flex-flow: row wrap;
+                        margin-top: 30px;
+                        color: white;
+                        font-size: 0.9rem;">
+Matplotlib 라이브러리를 활용하여 필터링된 데이터를 바차트로 구현했습니다.
+                        </p>
+                        <img src="img_src/[빅데이터분석 및 시각화]채용데이터 분석 및 시각화7.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(80%);
+                        min-width: 400px;
+                        ">
+                    </div>
+
+                    <div class="slide">
+                        <h3 
+                        style=
+                        "width:calc(80%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        필터링을 위한 알고리즘 뿐만 아니라, Tkinter를 활용해 사용자에게 친숙하게 만들고자 노력했습니다.
+                        <br><br>
+                        Github : <a href="https://github.com/juncheolishere/python_recruitCheck/tree/main"
+                                    style="
+                                    text-decoration:none;
+                                    color: white;
+                                    "
+                        >클릭하세요!</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="melonProject">
+            <div class="projectDetail">
+                <div 
+                style=
+                "z-index: 16;
+                display: flex;
+                position:fixed;
+                right: 50px;
+                top:50px;
+                width: 15px;
+                height: 15px;">
+                    <div 
+                    style=
+                    "cursor: pointer;
+                    position: absolute;
+                    width:15px;
+                    height:2px;
+                    background-color: white;
+                    transform: rotate(45deg);"></div>
+                    <div 
+                    style=
+                    "cursor: pointer;
+                    position: absolute;
+                    width:15px;
+                    height:2px;
+                    background-color: white;
+                    transform: rotate(-45deg);"></div>
+                </div>
+                <div class="detailPrev" onclick="slidePrev(this)">&lt;</div>
+                <div class="detailNext" onclick="slideNext(this)">&gt;</div>
+                <div class="slideWrap">
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        melonChartDataAnalysis</h1>
+                        <div 
+                        style=
+                        "color: white;
+                        display: flex;
+                        flex-flow: column;
+                        width: calc(80%);
+                        position: relative;">
+                            <h2 
+                            style=
+                            "display:flex;
+                            width: calc(100%);">
+                            프로젝트 개요</h2>
+                            <h5 
+                            style=
+                            "display:flex;
+                            width: calc(100%);">
+                            #Python - Tkinter(GUI), Selenium, Numpy, Pandas 라이브러리 활용</h5>
+                            <h3 
+                            style=
+                            "display:flex;
+                            width: calc(100%);
+                            margin-top: 30px;">
+                            데이터 크롤링 및 데이터 분석 전략</h3>
+                            <p 
+                            style=
+                            "display:flex;
+                            width: calc(100%);
+                            flex-flow: row wrap;
+                            margin-top: 30px;
+                            font-size: 0.9rem;">
+Selenium 라이브러리를 이용하여 Melon 2020차트와 2021 차트의 데이터를 수집했습니다. 수집한 데이터의 전처리 과정을 통해서
+Pandas, Numpy 라이브러리를 활용하여 데이터프레임화 시켰습니다. 데이터프레임으로 분류된 데이터를 엑셀형태로 저장하며, 데이터프레임을 기반으로
+데이터 분석을 실시했습니다. 결과적으로 데이터프레임의 후처리를 통해 Matplotlib 라이브러리로 시각화를 하는 프로젝트 였습니다.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        1. 크롤링과 데이터프레임 선언</h1>
+                        <p style="
+                        display: flex;
+                        width: calc(80%);
+                        min-width: 400px;
+                        color: white;
+                        font-size: 0.9rem;
+                        justify-content: center;
+                        ">
+                        Selenium을 통해 크롤링된 데이터를 각각의 데이터프레임으로 선언하여 저장했습니다.
+                        </p>
+                        <img src="img_src/[데이터시각화]멜론차트4.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                        <img src="img_src/[데이터시각화]멜론차트5.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                    </div>
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        2. 실행 후 데이터 저장 형태</h1>
+                        <img src="img_src/[빅데이터구축]큼_프로젝트4.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                        <img src="img_src/[빅데이터구축]큼_프로젝트5.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                    </div>
+                    <div class="slide">
+                        <h1 
+                        style=
+                        "width:calc(100%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        3. 시퀀스 저장 및 불러오기</h1>
+                        <img src="img_src/[빅데이터구축]큼_프로젝트6.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                        <img src="img_src/[빅데이터구축]큼_프로젝트7.PNG" alt="" style=
+                        "
+                        position: relative;
+                        display: flex;
+                        width: calc(40%);
+                        min-width: 400px;
+                        ">
+                    </div>
+                    <div class="slide">
+                        <h3 
+                        style=
+                        "width:calc(80%);
+                        color: white;
+                        position: relative;
+                        margin-top: 30px;
+                        text-align: center;">
+                        설정한 매크로를 진행시킬 뿐 아니라, 시퀀스를 저장 및 불러오기를 수 있게 만들었습니다.
+                        데이터 구축을 위한 시퀀스를 수정 및 삭제, 저장할 수 있게 설계하여 데이터의 유지/보수/관리가 용이하도록 의도했습니다.
+                        하단에 프로그램 소스가 저장된 깃허브 주소를 연결시켰으니, 궁금하신 분들은 해당 사이트에 접속하여 확인해주시기 바랍니다.
+                        <br><br>
+                        Github : <a href="https://github.com/juncheolishere/CM-_-"
+                                    style="
+                                    text-decoration:none;
+                                    color: white;
+                                    "
+                        >클릭하세요!</a>
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- contact me -->
         <div id="ContactMe">
 

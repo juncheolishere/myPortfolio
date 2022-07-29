@@ -679,3 +679,93 @@ h2{
     cursor: pointer;
     margin-right: 20px;
 }
+
+#cmProject{
+    flex-flow: row nowrap;
+    display: none;
+    overflow: hidden;
+}
+#recruitProject{
+    flex-flow: row nowrap;
+    display: none;
+    overflow: hidden;
+}
+#melonProject{
+    flex-flow: row nowrap;
+    display: none;
+    overflow: hidden;
+}
+.detailPrev{
+    position: fixed;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px 15px 15px 15px ;
+    border-style: 1px solid white;
+    top: calc(50%);
+    left: 10px;
+    cursor: pointer;
+    color: #fffde4;
+    font-size: 2rem;
+    font-weight: 900;
+    z-index: 16;
+}
+.detailNext{
+    position: fixed;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px 15px 15px 15px ;
+    border-style: 1px solid white;
+    top:-webkit-calc(50%-15px);
+    top:-moz-calc(50%-15px);
+    top:calc(50%);
+    right: 10px;
+    cursor: pointer;
+    color: #fffde4;
+    font-size: 2rem;
+    font-weight: 900;
+    z-index: 16;
+}
+.projectDetail{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-flow: row nowrap;
+    width: calc(100%);
+    height: calc(100%);
+    z-index: 15;
+}
+.slideWrap{
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-flow: row nowrap;
+    width: calc(100%);
+    height: calc(100%);
+    transform: translateX(0px);
+    transition: 0.5s;
+}
+.slide {
+    position: relative;
+    background-color: #002342c4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    min-width: calc(100%);
+    max-width: calc(100%);
+    height: calc(100%);
+    align-items: center;
+    user-select: none;
+    overflow-y: auto;
+}
+.detailImg{
+    position: relative;
+    display: flex;
+}
+.detailText{
+    position: relative;
+    display: flex;
+}
